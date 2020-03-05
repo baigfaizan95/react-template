@@ -4,8 +4,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### assets
 Contains all the assets required in the overall app.<br />
-Sub Folders <br />
-1) svg
 
 ### components
 Contains all the reusable components. <br />
