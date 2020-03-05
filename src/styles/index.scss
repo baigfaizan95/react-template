@@ -1,0 +1,32 @@
+@import 'utils';
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  font-size: 100%;
+  background: transparent;
+  box-sizing: border-box;
+  touch-action: manipulation;
+}
+
+html {
+  font-size: 1em;
+}
+
+body {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-style: normal;
+  position: relative;
+  cursor: auto;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $black;
+  font-size: $font-size;
+  line-height: 1.3;
+}
