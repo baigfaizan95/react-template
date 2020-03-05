@@ -1,0 +1,94 @@
+@import '~styles/utils';
+$self: '.Button';
+
+#{$self} {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  word-break: keep-all;
+  user-select: none;
+  padding: 10px 16px;
+  transition: all 0.3s;
+  opacity: 1;
+  font-weight: 500;
+  min-width: 100px;
+  border: 1px solid $black-light;
+  font-weight: 600;
+
+  &--size {
+    &--normal {
+      height: 42px;
+      font-size: 16px;
+    }
+    &--big {
+      height: 50px;
+      font-size: 18px;
+    }
+    &--small {
+      height: 38px;
+      font-size: 14px;
+    }
+  }
+
+  &--color {
+    &--primary {
+      color: $white;
+      background-color: $primary;
+      border-color: $primary;
+
+      &:hover {
+        background-color: $primary-hover;
+        border-color: $primary-hover;
+      }
+    }
+    &--default {
+      color: $black;
+      background-color: $default;
+      border-color: $default;
+      &:hover {
+        border-color: $black;
+      }
+    }
+  }
+
+  &--layout {
+    &--solid {
+      color: $white;
+      background: $primary;
+      border: 1px solid $primary;
+
+      &#{$self}--color--default {
+        background-color: $default;
+        border-color: $default;
+        color: $black;
+        &:hover {
+          border-color: $black;
+        }
+      }
+    }
+
+    &--outline {
+      color: $primary;
+      background: $white;
+      border: 1px solid $primary;
+
+      &:hover {
+        color: $primary-hover;
+        background-color: $white;
+        border-color: $primary-hover;
+      }
+
+      &#{$self}--color--default {
+        color: $black;
+        border-color: $default;
+        &:hover {
+          border-color: $black;
+        }
+      }
+    }
+  }
+}

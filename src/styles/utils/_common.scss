@@ -12,3 +12,23 @@ a {
   cursor: pointer;
   color: $primary;
 }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 80rem;
+  padding: 0 80px;
+  width: 100%;
+
+
+  @include breakpoint(699) {
+    padding: 0 25px;
+  }
+
+  @include breakpoint(499) {
+    padding: 0 15px;
+  }
+
+  @include breakpoint(350) {
+    padding: 0 10px;
+  }
+}

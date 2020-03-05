@@ -21,7 +21,9 @@ module.exports = {
     'arrow-parens': 0,
     'react/jsx-props-no-spreading': 0,
     'arrow-body-style': 0,
-    'implicit-arrow-linebreak': 0
+    'implicit-arrow-linebreak': 0,
+    'comma-dangle': 0,
+    'no-underscore-dangle': 0
   },
   settings: {
     'import/resolver': {
