@@ -2,7 +2,6 @@
   "name": "homi-test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://baigfaizan95.github.io/homi-test",
   "dependencies": {
     "@bem-react/classname": "^1.5.7",
     "@testing-library/jest-dom": "^4.2.4",
