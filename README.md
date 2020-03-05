@@ -1,5 +1,29 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Folder Structure
+
+### assets
+Contains all the assets required in the overall app.<br />
+Sub Folders <br />
+1) svg
+
+### components
+Contains all the reusable components. <br />
+Single component structure<br />
+Component.jsx, index.jsx, Component.scss <br />
+import the scss file in the component and default export the component from index file.
+
+### containers
+Contains all the routes components.<br />
+Folder structure same as components.
+
+### styles
+Contains all the common styles and mixins.
+
+### utils.
+Contains all the helpers and common functions.
+
+
 ## Available Scripts
 
 In the project directory, you can run:
