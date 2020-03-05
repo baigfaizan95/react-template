@@ -26,7 +26,8 @@ export function validateForm(values) {
   if (!validator.exists(password)) {
     error.password = 'Please enter password';
   } else if (!validator.validatePassword(password)) {
-    error.password = 'Please enter a valid password';
+    error.password =
+      'Password must be 8 characters long with atleast 1 uppercase, number and a special character';
   }
 
   return error;
