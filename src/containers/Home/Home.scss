@@ -6,14 +6,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include breakpoint(600) {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
   }
   &__title {
     font-size: 40px;
     font-weight: 800;
+
+    @include breakpoint(600) {
+      font-size: 32px;
+    }
   }
 
   &__data {
     max-width: 400px;
+
+    @include breakpoint(600) {
+      margin-top: 30px;
+    }
 
     &-wrapper {
       flex: 1;
@@ -24,6 +37,7 @@
     padding: 15px 0 30px 0;
     color: $black-light;
     font-size: 20px;
+
   }
 
   &__img {

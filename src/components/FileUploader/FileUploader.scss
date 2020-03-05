@@ -1,0 +1,77 @@
+@import '~styles/utils';
+
+.FileUploader {
+  position: relative;
+
+  &__form {
+    height: 200px;
+    width: 300px;
+    position: relative;
+    background-color: $inactive;
+    &:hover {
+      .FileUploader__wrapper {
+        border-color: $primary;
+      }
+    }
+
+    @include breakpoint(400) {
+      width: 270px;
+    }
+  }
+
+  &__wrapper {
+    border: 1px solid $default;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-weight: bold;
+
+  }
+
+  &.highlight {
+    .FileUploader__wrapper {
+      border-color: $primary;
+    }
+  }
+
+  &__preview {
+    display: flex;
+    margin-top: 10px;
+    &__item {
+      position: relative;
+      margin-right: 10px;
+      border: 1px solid $default;
+      padding: 2px;
+      border-radius: 50%;
+
+      img {
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+      }
+    }
+    &__close {
+      cursor: pointer;
+      position: absolute;
+      top: -5px;
+      right: 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  @include breakpoint(699) {
+    width: 450px;
+  }
+
+  @include breakpoint(499) {
+    width: 300px;
+  }
+}

@@ -14,7 +14,7 @@ function useForm(validate) {
     if (JSON.stringify(errors) !== JSON.stringify(_errors)) {
       setErrors(_errors);
     }
-  }, [values]);
+  }, [values, errors, validate]);
 
   const onChange = event => {
     event.persist();

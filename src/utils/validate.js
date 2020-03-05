@@ -16,13 +16,21 @@ const validatePassword = value => {
 
 const validateName = value => {
   const pattern = /^(?=.{3,50}$)[a-z]+(?:['_.\s][a-z]+)*$/i;
-  if (!pattern.text(value)) {
+  if (!pattern.test(value)) {
+    return false;
+  }
+  return true;
+};
+
+const exists = value => {
+  if (!value || !value.trim()) {
     return false;
   }
   return true;
 };
 
 export default {
+  exists,
   validateEmail,
   validatePassword,
   validateName
